@@ -1,1 +1,0 @@
-# pacer-pro-coding-test
