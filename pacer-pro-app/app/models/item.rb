@@ -11,5 +11,8 @@ class Item < ApplicationRecord
     def restore
       update(deleted_at: nil)
     end
+
+    # Default scope to exclude deleted items
+    default_scope { where(deleted_at: nil) }
 end
   
